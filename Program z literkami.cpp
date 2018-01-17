@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	char odp;
-	do				//pêtla "do" do sprawdzenia czy powtarzamy zadanie, czy nie
+	do				//pÄ™tla "do" do sprawdzenia czy powtarzamy zadanie, czy nie
 	{
 		char znak;
 		int liczba_liter;
@@ -16,12 +16,12 @@ int main()
 			}
 			else
 			{
-				cout << "\t";		//tabulator do nastêpnej dwójki
+				cout << "\t";		//tabulator do nastÄ™pnej dwÃ³jki
 			}
 			cout << znak;
 		}
 
-		cout << "\n";			//przejœcie do nastêpnej linijki
+		cout << "\n";			//przejÅ›cie do nastÄ™pnej linijki
 
 		cout << "Podaj liczbe, po ile liter w rzedzie mam wypisac dalej:\n";
 		cin >> liczba_liter;
@@ -38,30 +38,30 @@ int main()
 			{
 				if ((znak - 'I') % liczba_liter)
 				{
-					cout << "";		//do³¹czenie litery
+					cout << "";		//doÅ‚Ä…czenie litery
 				}
 				else
 				{
-					cout << "\n";	//przejœcie do nastêpnej linijki
+					cout << "\n";	//przejÅ›cie do nastÄ™pnej linijki
 				}
 				cout << znak;
 			}
 		}
 
-		cout << "\nCzy chcesz powtorzyc zadanie?	[t/n]\n";		//po drobnych zmianach teraz ju¿ tu siê chrzani...
+		cout << "\nCzy chcesz powtorzyc zadanie?	[t/n]\n";		//po drobnych zmianach teraz juÅ¼ tu siÄ™ chrzani...
 		cin >> odp;
 
 		if (odp != 'n', 't')
 		{
 			cout << "\nPodaj odpowiedz typu [t/n]:\n";
 			cin >> odp;
-		}						//odt¹d zaczyna siê coœ chrzaniæ...
-								//chocia¿ nie wywala b³êdu, od tego miejsca do koñca ³¹czy ju¿ wszystko w jedn¹ grupê
+		}						//odtÄ…d zaczyna siÄ™ coÅ› chrzaniÄ‡...
+								//chociaÅ¼ nie wywala bÅ‚Ä™du, od tego miejsca do koÅ„ca Å‚Ä…czy juÅ¼ wszystko w jednÄ… grupÄ™
 		else
 		{
 			;
 		}
-	} while (odp == 'n');		//i jak to zakoñczyæ...
+	} while (odp == 'n');		//i jak to zakoÅ„czyÄ‡...
 	
 	return 0;						
 	
