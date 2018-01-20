@@ -41,3 +41,5 @@ int main()
 	while (znak != 't');
 	return 0;
 }
+			//PS Magiczne znaczki do robienia komentarzy wcinających się w kod:
+			//	/*blablabla*/
