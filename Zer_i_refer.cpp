@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 //**************************************************************
-//definicja nazwy i elementów funkcji wewnêtrznej
+//definicja nazwy i elementÃ³w funkcji wewnÄ™trznej
 void zerowanie(int wart, int &druga_wart)
 {
 	cout << "\tW funkcji zerowanie przed zerowaniem \n"
@@ -30,7 +30,7 @@ int main()
 		cout << "Po wywolaniu funkcji: zerowanie \n"
 			<< "a = " << a << ", a b = " << b << ".\n";
 
-		//a teraz pytanie o zamkniêcie czy powtórzenie programu
+		//a teraz pytanie o zamkniÄ™cie czy powtÃ³rzenie programu
 
 		cout << "\nCzy chcesz zakonczyc prace programu? [t/n]?\n";
 		cin >> znak;
