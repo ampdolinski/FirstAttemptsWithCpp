@@ -22,13 +22,13 @@ inline double wspy(double wspolrzedna)
 
 int main()
 {
-	double	x1 = 100,		//przyk�adowy punkt
+	double	x1 = 100,		//przykładowy punkt
 			y1 = 100;
 	
 	cout << "Mamy punkt W o wspolrzednych:\n "
 		<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
 
-	//zmiana pocz�tku uk�adu wsp�rz�dnych
+	//zmiana poczštku układu współrzędnych
 	poczatek_x = 20;
 	poczatek_y = -500;
 
@@ -38,7 +38,7 @@ int main()
 		<< "\nnowe wspolrzedne punktu W beda nastepiujace:\n"
 		<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
 
-	//teraz zag�szczenie skali na osi pionowej
+	//teraz zagęszczenie skali na osi pionowej
 	skala_x = 0.5;
 	cout << "Gdy dodatkowo zmienimy skale pozioma na wartosc: "
 		<< skala_x << ",\nto otrzymamy jako koncowe wartosci wspolrzednych:\n"
