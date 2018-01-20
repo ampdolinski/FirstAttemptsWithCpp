@@ -31,7 +31,7 @@ int main()
 	cout << "Mamy punkt W o wspolrzednych:\n "
 		<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
 
-	//zmiana pocz�tku uk�adu wsp�rz�dnych
+	//zmiana poczštku układu współrzędnych
 
 	cout << "Wprowadz wspolrzedna x nowego ukladu wspolrzednych:\n ";
 	cin >> poczatek_x;
@@ -55,6 +55,6 @@ int main()
 		<< skala_x << ",\nto otrzymamy jako koncowe wartosci wspolrzednych:\n"
 		<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
 
-	getchar();		//zatrzymanie programu, �eby klikn�� ENTER - w tej wersji �apie ostatniego ENTER-a...
+	getchar();		//zatrzymanie programu, żeby kliknšć ENTER - w tej wersji łapie ostatniego ENTER-a...
 	return 0;
 	}
