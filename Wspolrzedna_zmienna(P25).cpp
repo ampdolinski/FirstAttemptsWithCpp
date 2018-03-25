@@ -23,38 +23,53 @@ inline double wspy(double wspolrzedna)
 int main()
 {
 	double	x1, y1;
-	cout << "Wprowadz wspolrzedna x punktu W:\n ";
-	cin >> x1;
-	cout << "Wprowadz wspolrzedna y punktu W:\n ";
-	cin >> y1;
-	
-	cout << "Mamy punkt W o wspolrzednych:\n "
-		<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
+	char odpowiedz;
 
-	//zmiana poczštku układu współrzędnych
+	do {
 
-	cout << "Wprowadz wspolrzedna x nowego ukladu wspolrzednych:\n ";
-	cin >> poczatek_x;
-	cout << "Wprowadz wspolrzedna y nowego ukladu wspolrzednych:\n ";
-	cin >> poczatek_y;
+		cout << "Wprowadz wspolrzedna x punktu W:\n";
+		cin >> x1;
+		cout << "Wprowadz wspolrzedna y punktu W:\n";
+		cin >> y1;
+
+		cout << "Mamy punkt W o wspolrzednych:\n"
+			<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
+
+		//zmiana początku układu współrzędnych
+
+		cout << "Wprowadz wspolrzedna x nowego ukladu wspolrzednych:\n";
+		cin >> poczatek_x;
+		cout << "Wprowadz wspolrzedna y nowego ukladu wspolrzednych:\n";
+		cin >> poczatek_y;
 
 		cout << "Po zmianie poczatku ukladu wspolrzednych tak,\n"
-		<< "ze znajdzie sie on w punkcie (" << poczatek_x << ", "
-		<< poczatek_y << "),"
-		<< "\nnowe wspolrzedne punktu W beda nastepiujace:\n"
-		<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
+			<< "ze znajdzie sie on w punkcie (" << poczatek_x << ", "
+			<< poczatek_y << "),"
+			<< "\nnowe wspolrzedne punktu W beda nastepiujace:\n"
+			<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
 
-	//teraz pytanie o skale na osiach
-	
-		cout << "Wprowadz skale osi x koncowego ukladu wspolrzednych:\n ";
+		//teraz pytanie o skale na osiach
+
+		cout << "Wprowadz skale osi x koncowego ukladu wspolrzednych:\n";
 		cin >> skala_x;
-		cout << "Wprowadz skale osi y koncowego ukladu wspolrzednych:\n ";
+		cout << "Wprowadz skale osi y koncowego ukladu wspolrzednych:\n";
 		cin >> skala_y;
 
-	cout << "Gdy dodatkowo zmienimy skale pozioma na wartosc: "
-		<< skala_x << ",\nto otrzymamy jako koncowe wartosci wspolrzednych:\n"
-		<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
+		cout << "Gdy dodatkowo zmienimy skale pozioma na wartosc: "
+			<< skala_x << ",\nto otrzymamy jako koncowe wartosci wspolrzednych:\n"
+			<< "x = " << wspx(x1) << " oraz y = " << wspy(y1) << endl;
 
-	getchar();		//zatrzymanie programu, żeby kliknšć ENTER - w tej wersji łapie ostatniego ENTER-a...
-	return 0;
+		cout << "Czy chcesz wykonac zadanie jeszcze raz? [t/n]\n";
+		cin >> odpowiedz;
+
+		//jak wyczyścić śmieci ze stosu pamięci? bo "return 0;" wyłącza mi program...
+		//trochę prymitywne rozwiązanie, ale działa
+
+		x1 = y1 = poczatek_x = poczatek_y = 0,	
+		skala_x = skala_y = 1;
+
+	}
+
+	while (odpowiedz == 't');
+
 	}
